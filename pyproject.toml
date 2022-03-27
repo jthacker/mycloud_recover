@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "mycloud_recover"
+version = "0.1.0"
+description = ""
+authors = ["Jon Thacker <thacker.jon@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+tqdm = "^4.63.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+ipython = "^8.2.0"
+black = "^22.1.0"
+
+[tool.poetry.scripts]
+mycloud_recover = "mycloud_recover.cli:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
